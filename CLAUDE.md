@@ -60,3 +60,31 @@ The project follows a structured approach:
 
 ## Language Notes
 All documentation is in Korean. The game targets Korean-speaking audiences with culturally relevant delivery/apartment living scenarios.
+
+## Taskmaster 작업 진행 원칙
+
+### 📋 작업 관리 시스템
+모든 개발 작업은 **Taskmaster**를 통해 체계적으로 진행됩니다.
+
+### 🎯 메인 태스크 진행 방식
+1. **시작 전 브리핑**: 메인 태스크의 전체 목적과 포함된 서브태스크들을 명확히 설명
+2. **서브태스크 순차 진행**: 정의된 순서에 따라 하나씩 완료
+3. **단일 집중**: 절대 여러 서브태스크를 동시에 진행하지 않음
+4. **완료 후 요약**: 메인 태스크 완료 시 모든 서브태스크 성과 정리
+
+### 🔄 서브태스크 진행 원칙
+- **시작 설명**: 각 서브태스크 시작 전 무엇을 할 것인지 명확히 설명
+- **완료 확인**: 서브태스크 완료 후 status를 "done"으로 변경
+- **초보자 친화적 설명**: 완료한 내용과 다음 진행 내용을 쉽게 설명
+- **단계적 피드백**: 각 단계에서 달성한 것과 다음 목표 제시
+
+### ⚠️ 금지사항
+- 독단적인 서브태스크 건너뛰기 또는 동시 진행
+- 완료 상태 업데이트 누락
+- 사용자 설명 없이 진행하는 작업
+
+### 📊 상태 관리
+- **pending**: 대기 중
+- **in_progress**: 진행 중  
+- **done**: 완료
+- **blocked**: 차단됨 (의존성 미충족)
