@@ -1,0 +1,43 @@
+# Task ID: 7
+# Title: Create Ending Conditions
+# Status: pending
+# Dependencies: 6
+# Priority: high
+# Description: Define and implement the conditions for different game endings.
+# Details:
+Program the logic for Good, Bad, Neutral, and Secret endings based on player choices throughout the game. Use flags to track player actions and decisions.
+
+# Test Strategy:
+Test all ending conditions to ensure they trigger correctly based on player actions.
+
+# Subtasks:
+## 1. Define Ending Conditions [pending]
+### Dependencies: None
+### Description: Outline the specific conditions that will trigger each of the four game endings: Good, Bad, Neutral, and Secret.
+### Details:
+Create a document that lists the criteria for each ending based on player choices and actions. Ensure that the conditions are clear and distinct to avoid overlap.
+
+## 2. Implement Good Ending Logic [pending]
+### Dependencies: 7.1
+### Description: Program the logic that will determine when the Good ending is triggered based on player actions.
+### Details:
+Use flags to track specific player actions that contribute to the Good ending. Implement the logic in the game's main script, ensuring it checks the conditions defined in subtask 1.
+
+## 3. Implement Bad Ending Logic [pending]
+### Dependencies: 7.1
+### Description: Program the logic that will determine when the Bad ending is triggered based on player actions.
+### Details:
+Similar to the Good ending, use flags to track actions leading to the Bad ending. Implement this logic in the game's main script, ensuring it checks the conditions defined in subtask 1.
+
+## 4. Implement Neutral Ending Logic [pending]
+### Dependencies: 7.1
+### Description: Program the logic that will determine when the Neutral ending is triggered based on player actions.
+### Details:
+Use flags to track actions that lead to the Neutral ending. Implement this logic in the game's main script, ensuring it checks the conditions defined in subtask 1.
+
+## 5. Implement Secret Ending Logic [pending]
+### Dependencies: 7.1
+### Description: Program the logic that will determine when the Secret ending is triggered based on specific player actions.
+### Details:
+Define unique flags for actions that lead to the Secret ending. Implement this logic in the game's main script, ensuring it checks the conditions defined in subtask 1.
+

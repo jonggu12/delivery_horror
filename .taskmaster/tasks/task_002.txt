@@ -1,0 +1,43 @@
+# Task ID: 2
+# Title: Develop Unity Prototype
+# Status: pending
+# Dependencies: 1
+# Priority: high
+# Description: Create a Unity prototype for the core gameplay loop.
+# Details:
+Implement a 2D card swipe mechanic to represent the normal and abnormal scenarios. Include basic UI elements for the delivery app notifications and player choices.
+
+# Test Strategy:
+Conduct playtesting sessions to ensure the loop functions correctly and players can navigate through choices.
+
+# Subtasks:
+## 1. Design Card Swipe Mechanic [pending]
+### Dependencies: None
+### Description: Create the 2D card swipe mechanic that allows players to interact with normal and abnormal scenarios.
+### Details:
+Utilize Unity's UI system to design swipeable cards. Implement touch input detection for swipe gestures and define behaviors for normal and abnormal scenarios based on the swipe direction.
+
+## 2. Implement Basic UI Elements [pending]
+### Dependencies: None
+### Description: Develop the basic UI elements for delivery app notifications and player choices.
+### Details:
+Create UI panels for notifications and choices using Unity's Canvas system. Ensure that the UI updates dynamically based on the game state and player interactions.
+
+## 3. Integrate Gameplay Loop [pending]
+### Dependencies: None
+### Description: Combine the card swipe mechanic and UI elements into the core gameplay loop.
+### Details:
+Program the main gameplay loop that triggers the card swipe mechanic and updates the UI based on player choices. Use Unity's event system to manage transitions between different gameplay states.
+
+## 4. Create Player Choice Outcomes [pending]
+### Dependencies: None
+### Description: Define the outcomes of player choices made during the gameplay loop.
+### Details:
+Implement logic that determines the consequences of player choices, affecting the game state and future scenarios. Use state management to track player decisions.
+
+## 5. Conduct Playtesting and Feedback Collection [pending]
+### Dependencies: None
+### Description: Organize playtesting sessions to gather feedback on the prototype and identify areas for improvement.
+### Details:
+Set up playtesting sessions with target users. Collect feedback on the gameplay experience, mechanics, and UI. Analyze the feedback to make necessary adjustments.
+

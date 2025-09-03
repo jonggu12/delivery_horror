@@ -1,0 +1,43 @@
+# Task ID: 8
+# Title: Develop Unreal Vertical Slice
+# Status: pending
+# Dependencies: 1
+# Priority: medium
+# Description: Create a vertical slice of the game using Unreal Engine.
+# Details:
+Build a 3D environment representing the apartment corridor and front door. Implement a single character event with sound effects to showcase the game's atmosphere.
+
+# Test Strategy:
+Conduct a demo playthrough to evaluate the vertical slice's effectiveness in conveying the game's concept.
+
+# Subtasks:
+## 1. Create 3D Environment Layout [pending]
+### Dependencies: None
+### Description: Design and model the 3D environment for the apartment corridor and front door using Unreal Engine.
+### Details:
+Use Unreal Engine's modeling tools to create the layout of the apartment corridor, ensuring it includes key architectural features. Import any necessary assets and textures to enhance realism.
+
+## 2. Implement Lighting and Atmosphere [pending]
+### Dependencies: None
+### Description: Set up lighting and atmospheric effects in the 3D environment to enhance the mood.
+### Details:
+Utilize Unreal Engine's lighting system to create dynamic lighting that reflects the time of day. Add fog, shadows, and ambient occlusion to increase depth and atmosphere.
+
+## 3. Develop Character Event Mechanics [pending]
+### Dependencies: None
+### Description: Create the mechanics for the single character event that will occur in the environment.
+### Details:
+Program the character's actions and interactions within the environment using Unreal Engine's Blueprint system. Ensure the event triggers appropriately based on player input.
+
+## 4. Add Sound Effects [pending]
+### Dependencies: None
+### Description: Integrate sound effects that enhance the character event and overall atmosphere.
+### Details:
+Select and implement sound assets for the character event, including footsteps, door sounds, and ambient noises. Use Unreal Engine's audio system to manage sound triggers and volumes.
+
+## 5. Conduct Demo Playthrough [pending]
+### Dependencies: None
+### Description: Perform a demo playthrough of the vertical slice to evaluate its effectiveness.
+### Details:
+Gather a group of testers to play through the vertical slice, observing their reactions and gathering feedback on the experience. Take notes on areas for improvement.
+

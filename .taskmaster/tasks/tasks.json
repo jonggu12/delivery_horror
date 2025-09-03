@@ -1,0 +1,671 @@
+{
+  "master": {
+    "tasks": [
+      {
+        "id": 1,
+        "title": "Setup Project Repository",
+        "description": "Initialize a version control repository for the project.",
+        "details": "Create a new Git repository on GitHub or GitLab. Set up the initial directory structure for the Unity and Unreal projects. Include a README file with project overview and setup instructions.",
+        "testStrategy": "Verify repository is accessible and correctly structured by cloning it to a local machine.",
+        "priority": "medium",
+        "dependencies": [],
+        "status": "pending",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Create Git Repository",
+            "description": "Set up a new Git repository on GitHub or GitLab for the project.",
+            "dependencies": [],
+            "details": "Log into your GitHub or GitLab account and create a new repository. Ensure to initialize it with a README file.",
+            "status": "pending",
+            "testStrategy": "Verify that the repository is created and accessible online."
+          },
+          {
+            "id": 2,
+            "title": "Set Up Directory Structure",
+            "description": "Establish the initial directory structure for both Unity and Unreal projects within the repository.",
+            "dependencies": [],
+            "details": "Clone the repository locally. Create folders named 'UnityProject' and 'UnrealProject'. Inside each folder, create subfolders for 'Assets', 'Scripts', and 'Scenes'.",
+            "status": "pending",
+            "testStrategy": "Check that the directory structure matches the specified layout by listing the folders."
+          },
+          {
+            "id": 3,
+            "title": "Add README File",
+            "description": "Enhance the README file with project overview and setup instructions.",
+            "dependencies": [],
+            "details": "Edit the README file to include a brief description of the project, its purpose, and detailed setup instructions for both Unity and Unreal environments.",
+            "status": "pending",
+            "testStrategy": "Review the README file for clarity and completeness by having a team member read it."
+          },
+          {
+            "id": 4,
+            "title": "Commit Initial Changes",
+            "description": "Commit the initial directory structure and README file to the repository.",
+            "dependencies": [],
+            "details": "Use Git commands to stage all changes and commit them with a message like 'Initial project structure and README added'. Push the changes to the remote repository.",
+            "status": "pending",
+            "testStrategy": "Confirm that the changes are reflected in the remote repository by checking the commit history."
+          },
+          {
+            "id": 5,
+            "title": "Verify Repository Accessibility",
+            "description": "Ensure that the repository is accessible and correctly structured by cloning it to a local machine.",
+            "dependencies": [],
+            "details": "Clone the repository to a different local directory and verify that all files and folders are present as expected.",
+            "status": "pending",
+            "testStrategy": "Check that the cloned repository matches the original structure and that the README file is readable."
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Develop Unity Prototype",
+        "description": "Create a Unity prototype for the core gameplay loop.",
+        "details": "Implement a 2D card swipe mechanic to represent the normal and abnormal scenarios. Include basic UI elements for the delivery app notifications and player choices.",
+        "testStrategy": "Conduct playtesting sessions to ensure the loop functions correctly and players can navigate through choices.",
+        "priority": "high",
+        "dependencies": [
+          1
+        ],
+        "status": "pending",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Design Card Swipe Mechanic",
+            "description": "Create the 2D card swipe mechanic that allows players to interact with normal and abnormal scenarios.",
+            "dependencies": [],
+            "details": "Utilize Unity's UI system to design swipeable cards. Implement touch input detection for swipe gestures and define behaviors for normal and abnormal scenarios based on the swipe direction.",
+            "status": "pending",
+            "testStrategy": "Conduct user testing to ensure the swipe mechanic is responsive and intuitive."
+          },
+          {
+            "id": 2,
+            "title": "Implement Basic UI Elements",
+            "description": "Develop the basic UI elements for delivery app notifications and player choices.",
+            "dependencies": [],
+            "details": "Create UI panels for notifications and choices using Unity's Canvas system. Ensure that the UI updates dynamically based on the game state and player interactions.",
+            "status": "pending",
+            "testStrategy": "Perform usability testing to check the clarity and responsiveness of the UI elements."
+          },
+          {
+            "id": 3,
+            "title": "Integrate Gameplay Loop",
+            "description": "Combine the card swipe mechanic and UI elements into the core gameplay loop.",
+            "dependencies": [],
+            "details": "Program the main gameplay loop that triggers the card swipe mechanic and updates the UI based on player choices. Use Unity's event system to manage transitions between different gameplay states.",
+            "status": "pending",
+            "testStrategy": "Conduct playtesting sessions to ensure the gameplay loop functions smoothly and is engaging."
+          },
+          {
+            "id": 4,
+            "title": "Create Player Choice Outcomes",
+            "description": "Define the outcomes of player choices made during the gameplay loop.",
+            "dependencies": [],
+            "details": "Implement logic that determines the consequences of player choices, affecting the game state and future scenarios. Use state management to track player decisions.",
+            "status": "pending",
+            "testStrategy": "Test various player choices to verify that outcomes are correctly applied and impact the gameplay."
+          },
+          {
+            "id": 5,
+            "title": "Conduct Playtesting and Feedback Collection",
+            "description": "Organize playtesting sessions to gather feedback on the prototype and identify areas for improvement.",
+            "dependencies": [],
+            "details": "Set up playtesting sessions with target users. Collect feedback on the gameplay experience, mechanics, and UI. Analyze the feedback to make necessary adjustments.",
+            "status": "pending",
+            "testStrategy": "Use surveys and direct observation during playtesting to gather qualitative and quantitative data."
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Implement Core Gameplay Mechanics",
+        "description": "Develop the core gameplay mechanics for player interactions.",
+        "details": "Program the player actions for opening the door or retreating to bed based on the scenario. Use Unity's event system to handle player choices and transitions between days.",
+        "testStrategy": "Create unit tests for player actions to ensure correct state changes and transitions occur.",
+        "priority": "high",
+        "dependencies": [
+          2
+        ],
+        "status": "pending",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Implement Door Interaction Mechanic",
+            "description": "Develop the functionality that allows the player to open the door based on specific scenarios.",
+            "dependencies": [],
+            "details": "Use Unity's event system to create a door object that listens for player input. When the player interacts with the door, check the current scenario and trigger the appropriate animation and sound effect for opening the door.",
+            "status": "pending",
+            "testStrategy": "Create unit tests to verify that the door opens correctly under the right conditions and that the appropriate animations and sounds are triggered."
+          },
+          {
+            "id": 2,
+            "title": "Implement Retreat to Bed Mechanic",
+            "description": "Create the functionality for the player to retreat to bed when certain conditions are met.",
+            "dependencies": [
+              "3.1"
+            ],
+            "details": "Similar to the door interaction, use Unity's event system to create a bed object. When the player interacts with the bed, check the scenario and trigger the retreat animation and sound effect. Ensure that this action updates the player's state appropriately.",
+            "status": "pending",
+            "testStrategy": "Develop unit tests to ensure the retreat action works correctly and updates the player's state as expected."
+          },
+          {
+            "id": 3,
+            "title": "Integrate Player Choice System",
+            "description": "Set up a system to handle player choices between opening the door and retreating to bed.",
+            "dependencies": [
+              "3.1",
+              "3.2"
+            ],
+            "details": "Implement a choice manager that presents the player with options based on the current scenario. Use Unity's UI system to display choices and capture player input. Ensure that the choice made affects the game state and transitions between days.",
+            "status": "pending",
+            "testStrategy": "Conduct playtesting to ensure that player choices are intuitive and lead to the expected outcomes in the game."
+          },
+          {
+            "id": 4,
+            "title": "Implement Day Transition Mechanism",
+            "description": "Create a system to manage transitions between days based on player actions.",
+            "dependencies": [
+              "3.3"
+            ],
+            "details": "Develop a day manager that tracks the current day and updates it based on player actions. Use Unity's event system to trigger events at the end of each day, such as saving the game state and updating the scenario for the next day.",
+            "status": "pending",
+            "testStrategy": "Create unit tests to verify that the day transitions occur correctly and that the game state is saved and loaded as expected."
+          },
+          {
+            "id": 5,
+            "title": "Test and Refine Gameplay Mechanics",
+            "description": "Conduct thorough testing of all implemented gameplay mechanics to ensure they work seamlessly together.",
+            "dependencies": [
+              "3.4"
+            ],
+            "details": "Organize playtesting sessions to gather feedback on the core gameplay mechanics. Focus on player interactions, choice impacts, and day transitions. Use the feedback to refine mechanics and fix any identified issues.",
+            "status": "pending",
+            "testStrategy": "Utilize feedback from playtesting to iterate on gameplay mechanics, ensuring that all interactions feel smooth and engaging."
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "title": "Design Sound Effects",
+        "description": "Create and implement sound effects for the game.",
+        "details": "Develop sound assets for delivery notifications, doorbell, footsteps, and ambient noises. Use audio mixing techniques to enhance psychological tension during gameplay.",
+        "testStrategy": "Test sound effects in-game to ensure they trigger correctly and contribute to the intended atmosphere.",
+        "priority": "medium",
+        "dependencies": [
+          2
+        ],
+        "status": "pending",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Create Sound Assets for Delivery Notifications",
+            "description": "Develop sound effects specifically for delivery notifications, ensuring they are distinct and easily recognizable.",
+            "dependencies": [],
+            "details": "Use audio editing software to create and refine sound assets for delivery notifications. Focus on clarity and emotional impact to enhance player engagement.",
+            "status": "pending",
+            "testStrategy": "Play the sound effects in isolation to ensure they are clear and effective."
+          },
+          {
+            "id": 2,
+            "title": "Design Doorbell Sound Effect",
+            "description": "Create a unique sound effect for the doorbell that fits the game's atmosphere and enhances player immersion.",
+            "dependencies": [],
+            "details": "Utilize sound design techniques to craft a doorbell sound that is both inviting and slightly unsettling, reflecting the game's tone.",
+            "status": "pending",
+            "testStrategy": "Test the doorbell sound in context to ensure it fits well with other sound effects."
+          },
+          {
+            "id": 3,
+            "title": "Develop Footsteps Sound Effects",
+            "description": "Create various footsteps sound effects for different surfaces to enhance realism during gameplay.",
+            "dependencies": [],
+            "details": "Record or synthesize footsteps for various surfaces (e.g., wood, carpet, tile) and ensure they are layered appropriately for different character movements.",
+            "status": "pending",
+            "testStrategy": "Test the footsteps in-game to ensure they trigger correctly based on character movement."
+          },
+          {
+            "id": 4,
+            "title": "Create Ambient Noise Effects",
+            "description": "Develop ambient sound effects that contribute to the game's atmosphere, enhancing psychological tension.",
+            "dependencies": [],
+            "details": "Layer various ambient sounds (e.g., distant traffic, wind, faint whispers) to create a rich soundscape that builds tension during gameplay.",
+            "status": "pending",
+            "testStrategy": "Evaluate the ambient sounds in-game to ensure they enhance the overall atmosphere without overwhelming other sound effects."
+          },
+          {
+            "id": 5,
+            "title": "Implement and Test Sound Effects in Gameplay",
+            "description": "Integrate all created sound effects into the game and test their functionality and impact on gameplay.",
+            "dependencies": [],
+            "details": "Link sound effects to specific gameplay events, ensuring they trigger correctly and adjust audio levels for optimal player experience.",
+            "status": "pending",
+            "testStrategy": "Conduct playtesting sessions to assess the integration of sound effects and their contribution to the game's atmosphere."
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "title": "Build Anomaly Indicators",
+        "description": "Implement visual and audio cues for anomalies in the game.",
+        "details": "Create a system to display anomalies such as CCTV glitches and incorrect food branding. Use Unity's particle system for visual effects and trigger audio cues when anomalies occur.",
+        "testStrategy": "Test the anomaly indicators in various scenarios to ensure they activate correctly and enhance player tension.",
+        "priority": "medium",
+        "dependencies": [
+          3
+        ],
+        "status": "pending",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Design Visual Anomaly Effects",
+            "description": "Create visual effects for different types of anomalies, such as CCTV glitches and incorrect food branding.",
+            "dependencies": [],
+            "details": "Utilize Unity's particle system to design and implement visual effects that represent anomalies. Create prefabs for each type of anomaly effect and ensure they can be instantiated during gameplay.",
+            "status": "pending",
+            "testStrategy": "Test the visual effects in various scenarios to ensure they display correctly and are visually distinct."
+          },
+          {
+            "id": 2,
+            "title": "Implement Anomaly Detection System",
+            "description": "Develop a system that detects when anomalies occur in the game.",
+            "dependencies": [
+              "5.1"
+            ],
+            "details": "Create a script that monitors game events and triggers the anomaly effects when specific conditions are met, such as detecting a CCTV glitch or incorrect food branding. Use Unity's event system to handle these triggers.",
+            "status": "pending",
+            "testStrategy": "Simulate different scenarios to ensure the detection system correctly identifies anomalies and triggers the visual effects."
+          },
+          {
+            "id": 3,
+            "title": "Integrate Audio Cues for Anomalies",
+            "description": "Add audio cues that correspond to the detected anomalies to enhance player experience.",
+            "dependencies": [
+              "5.2"
+            ],
+            "details": "Develop audio clips for each type of anomaly and integrate them into the anomaly detection system. Ensure that audio cues are triggered simultaneously with the visual effects.",
+            "status": "pending",
+            "testStrategy": "Test the audio cues in-game to ensure they play correctly and are synchronized with the visual effects."
+          },
+          {
+            "id": 4,
+            "title": "Create Anomaly Feedback Mechanism",
+            "description": "Implement a feedback mechanism that informs players of the detected anomalies through both visual and audio cues.",
+            "dependencies": [
+              "5.3"
+            ],
+            "details": "Design a user interface element that displays a message or icon when an anomaly is detected. Ensure that this feedback is clear and enhances the player's awareness of the situation.",
+            "status": "pending",
+            "testStrategy": "Conduct playtesting to ensure players can easily recognize when an anomaly occurs and understand its implications."
+          },
+          {
+            "id": 5,
+            "title": "Test and Refine Anomaly Indicators",
+            "description": "Conduct thorough testing of the anomaly indicators to ensure they function correctly and enhance gameplay.",
+            "dependencies": [
+              "5.4"
+            ],
+            "details": "Create a series of test scenarios to evaluate the effectiveness of the visual and audio cues. Gather player feedback and make necessary adjustments to improve clarity and impact.",
+            "status": "pending",
+            "testStrategy": "Perform user testing sessions to observe player reactions and gather feedback on the anomaly indicators' effectiveness."
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "title": "Develop Player Response Mechanisms",
+        "description": "Implement player response options for dealing with anomalies.",
+        "details": "Create mechanics for calling the police, locking the door, and recording CCTV footage. Ensure these actions have consequences on the game's endings.",
+        "testStrategy": "Conduct playtesting to verify that player responses affect gameplay outcomes and are intuitive.",
+        "priority": "high",
+        "dependencies": [
+          3
+        ],
+        "status": "pending",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Implement Call Police Mechanic",
+            "description": "Create the mechanic that allows players to call the police when they encounter an anomaly.",
+            "dependencies": [],
+            "details": "Develop a user interface button for calling the police. When activated, trigger an animation or sound effect to simulate the call. Ensure that this action has a defined consequence on the game's ending, such as increasing safety or alerting the anomaly.",
+            "status": "pending",
+            "testStrategy": "Test the mechanic by simulating various scenarios to ensure the police call is responsive and leads to appropriate game outcomes."
+          },
+          {
+            "id": 2,
+            "title": "Implement Lock Door Mechanic",
+            "description": "Create the mechanic that allows players to lock the door as a response to anomalies.",
+            "dependencies": [
+              "6.1"
+            ],
+            "details": "Develop a user interface button for locking the door. When activated, change the door state to 'locked' and provide feedback through sound or animation. Ensure this action affects the player's safety and the game's ending.",
+            "status": "pending",
+            "testStrategy": "Test the locking mechanism in different scenarios to verify that it functions correctly and influences gameplay outcomes."
+          },
+          {
+            "id": 3,
+            "title": "Implement CCTV Recording Mechanic",
+            "description": "Create the mechanic that allows players to record CCTV footage when faced with anomalies.",
+            "dependencies": [
+              "6.1"
+            ],
+            "details": "Develop a user interface button for starting and stopping the CCTV recording. When activated, simulate recording footage and provide visual feedback. Ensure that this action has consequences, such as revealing information or affecting the game's ending.",
+            "status": "pending",
+            "testStrategy": "Test the CCTV recording feature to ensure it activates correctly and impacts the game's narrative based on player choices."
+          },
+          {
+            "id": 4,
+            "title": "Define Consequences for Player Actions",
+            "description": "Establish the consequences of the player actions (calling police, locking door, recording CCTV) on the game's endings.",
+            "dependencies": [
+              "6.2",
+              "6.3"
+            ],
+            "details": "Create a system that tracks player actions and their outcomes. Define how each action influences the game's narrative and endings, ensuring that players receive feedback on their choices.",
+            "status": "pending",
+            "testStrategy": "Conduct playtesting to verify that the consequences are clear and that players can see the impact of their decisions on the game's endings."
+          },
+          {
+            "id": 5,
+            "title": "Integrate and Test Player Response Mechanisms",
+            "description": "Integrate all player response mechanisms into the game and conduct comprehensive testing.",
+            "dependencies": [
+              "6.4"
+            ],
+            "details": "Combine the call police, lock door, and CCTV recording mechanics into the gameplay loop. Ensure that all UI elements are functional and intuitive. Conduct playtesting sessions to gather feedback on the player experience and make necessary adjustments.",
+            "status": "pending",
+            "testStrategy": "Perform extensive playtesting to ensure that all response mechanisms work seamlessly together and that players understand their options and consequences."
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "title": "Create Ending Conditions",
+        "description": "Define and implement the conditions for different game endings.",
+        "details": "Program the logic for Good, Bad, Neutral, and Secret endings based on player choices throughout the game. Use flags to track player actions and decisions.",
+        "testStrategy": "Test all ending conditions to ensure they trigger correctly based on player actions.",
+        "priority": "high",
+        "dependencies": [
+          6
+        ],
+        "status": "pending",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Define Ending Conditions",
+            "description": "Outline the specific conditions that will trigger each of the four game endings: Good, Bad, Neutral, and Secret.",
+            "dependencies": [],
+            "details": "Create a document that lists the criteria for each ending based on player choices and actions. Ensure that the conditions are clear and distinct to avoid overlap.",
+            "status": "pending",
+            "testStrategy": "Review the document with the team to ensure all conditions are understood and feasible."
+          },
+          {
+            "id": 2,
+            "title": "Implement Good Ending Logic",
+            "description": "Program the logic that will determine when the Good ending is triggered based on player actions.",
+            "dependencies": [
+              "7.1"
+            ],
+            "details": "Use flags to track specific player actions that contribute to the Good ending. Implement the logic in the game's main script, ensuring it checks the conditions defined in subtask 1.",
+            "status": "pending",
+            "testStrategy": "Create test scenarios to verify that the Good ending triggers correctly when the conditions are met."
+          },
+          {
+            "id": 3,
+            "title": "Implement Bad Ending Logic",
+            "description": "Program the logic that will determine when the Bad ending is triggered based on player actions.",
+            "dependencies": [
+              "7.1"
+            ],
+            "details": "Similar to the Good ending, use flags to track actions leading to the Bad ending. Implement this logic in the game's main script, ensuring it checks the conditions defined in subtask 1.",
+            "status": "pending",
+            "testStrategy": "Create test scenarios to verify that the Bad ending triggers correctly when the conditions are met."
+          },
+          {
+            "id": 4,
+            "title": "Implement Neutral Ending Logic",
+            "description": "Program the logic that will determine when the Neutral ending is triggered based on player actions.",
+            "dependencies": [
+              "7.1"
+            ],
+            "details": "Use flags to track actions that lead to the Neutral ending. Implement this logic in the game's main script, ensuring it checks the conditions defined in subtask 1.",
+            "status": "pending",
+            "testStrategy": "Create test scenarios to verify that the Neutral ending triggers correctly when the conditions are met."
+          },
+          {
+            "id": 5,
+            "title": "Implement Secret Ending Logic",
+            "description": "Program the logic that will determine when the Secret ending is triggered based on specific player actions.",
+            "dependencies": [
+              "7.1"
+            ],
+            "details": "Define unique flags for actions that lead to the Secret ending. Implement this logic in the game's main script, ensuring it checks the conditions defined in subtask 1.",
+            "status": "pending",
+            "testStrategy": "Create test scenarios to verify that the Secret ending triggers correctly when the conditions are met."
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "title": "Develop Unreal Vertical Slice",
+        "description": "Create a vertical slice of the game using Unreal Engine.",
+        "details": "Build a 3D environment representing the apartment corridor and front door. Implement a single character event with sound effects to showcase the game's atmosphere.",
+        "testStrategy": "Conduct a demo playthrough to evaluate the vertical slice's effectiveness in conveying the game's concept.",
+        "priority": "medium",
+        "dependencies": [
+          1
+        ],
+        "status": "pending",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Create 3D Environment Layout",
+            "description": "Design and model the 3D environment for the apartment corridor and front door using Unreal Engine.",
+            "dependencies": [],
+            "details": "Use Unreal Engine's modeling tools to create the layout of the apartment corridor, ensuring it includes key architectural features. Import any necessary assets and textures to enhance realism.",
+            "status": "pending",
+            "testStrategy": "Conduct visual inspections and walkthroughs to ensure the environment is immersive and matches design specifications."
+          },
+          {
+            "id": 2,
+            "title": "Implement Lighting and Atmosphere",
+            "description": "Set up lighting and atmospheric effects in the 3D environment to enhance the mood.",
+            "dependencies": [],
+            "details": "Utilize Unreal Engine's lighting system to create dynamic lighting that reflects the time of day. Add fog, shadows, and ambient occlusion to increase depth and atmosphere.",
+            "status": "pending",
+            "testStrategy": "Perform playtests to evaluate the atmosphere and make adjustments based on feedback."
+          },
+          {
+            "id": 3,
+            "title": "Develop Character Event Mechanics",
+            "description": "Create the mechanics for the single character event that will occur in the environment.",
+            "dependencies": [],
+            "details": "Program the character's actions and interactions within the environment using Unreal Engine's Blueprint system. Ensure the event triggers appropriately based on player input.",
+            "status": "pending",
+            "testStrategy": "Test the character event in various scenarios to ensure it functions correctly and is engaging."
+          },
+          {
+            "id": 4,
+            "title": "Add Sound Effects",
+            "description": "Integrate sound effects that enhance the character event and overall atmosphere.",
+            "dependencies": [],
+            "details": "Select and implement sound assets for the character event, including footsteps, door sounds, and ambient noises. Use Unreal Engine's audio system to manage sound triggers and volumes.",
+            "status": "pending",
+            "testStrategy": "Conduct audio tests in-game to ensure sound effects are synchronized with actions and contribute to the atmosphere."
+          },
+          {
+            "id": 5,
+            "title": "Conduct Demo Playthrough",
+            "description": "Perform a demo playthrough of the vertical slice to evaluate its effectiveness.",
+            "dependencies": [],
+            "details": "Gather a group of testers to play through the vertical slice, observing their reactions and gathering feedback on the experience. Take notes on areas for improvement.",
+            "status": "pending",
+            "testStrategy": "Analyze feedback from testers to identify strengths and weaknesses, and create a plan for adjustments based on their insights."
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "title": "Integrate Sound Design with Gameplay",
+        "description": "Ensure sound design elements are effectively integrated into gameplay.",
+        "details": "Link sound effects to specific gameplay events, such as footsteps approaching or doorbell rings. Adjust audio levels for optimal player experience.",
+        "testStrategy": "Test the integration of sound effects during gameplay to ensure they enhance the experience without being distracting.",
+        "priority": "medium",
+        "dependencies": [
+          4,
+          8
+        ],
+        "status": "pending",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Link Sound Effects to Gameplay Events",
+            "description": "Identify specific gameplay events that require sound effects, such as footsteps, doorbell rings, and notifications. Create a mapping of these events to their corresponding sound effects.",
+            "dependencies": [],
+            "details": "Use Unity's event system to trigger sound effects when specific gameplay actions occur. Ensure that each sound effect is linked to the appropriate event in the game logic.",
+            "status": "pending",
+            "testStrategy": "Playtest each event to confirm that the correct sound effect plays at the right moment."
+          },
+          {
+            "id": 2,
+            "title": "Adjust Audio Levels for Optimal Experience",
+            "description": "Analyze the audio levels of each sound effect and adjust them to ensure a balanced audio experience for players. This includes ensuring that sound effects are not too loud or too soft compared to the game's background music.",
+            "dependencies": [
+              "9.1"
+            ],
+            "details": "Utilize Unity's audio mixer to adjust the volume levels of each sound effect. Test the audio levels in various gameplay scenarios to ensure they enhance the experience without being distracting.",
+            "status": "pending",
+            "testStrategy": "Conduct audio mixing tests with different gameplay scenarios to ensure sound effects are well-balanced."
+          },
+          {
+            "id": 3,
+            "title": "Implement Dynamic Audio Feedback",
+            "description": "Create a system that dynamically adjusts sound effects based on gameplay context, such as increasing the intensity of footsteps when a player is being pursued.",
+            "dependencies": [
+              "9.1",
+              "9.2"
+            ],
+            "details": "Use Unity's audio system to implement dynamic audio feedback. This may involve changing pitch, volume, or adding effects based on player actions or game states.",
+            "status": "pending",
+            "testStrategy": "Test the dynamic audio feedback during gameplay to ensure it responds appropriately to player actions."
+          },
+          {
+            "id": 4,
+            "title": "Integrate Sound Design with Gameplay Mechanics",
+            "description": "Ensure that sound effects are integrated with core gameplay mechanics, such as player actions and environmental interactions.",
+            "dependencies": [
+              "9.1",
+              "9.2",
+              "9.3"
+            ],
+            "details": "Review the core gameplay mechanics and identify where sound effects can enhance player interactions. Implement sound triggers for actions like opening doors or receiving notifications.",
+            "status": "pending",
+            "testStrategy": "Playtest the integration to ensure sound effects enhance gameplay without causing confusion or distraction."
+          },
+          {
+            "id": 5,
+            "title": "Conduct Final Audio Testing and Adjustments",
+            "description": "Perform comprehensive testing of all sound design elements in the game to ensure they work harmoniously together and contribute to the overall player experience.",
+            "dependencies": [
+              "9.1",
+              "9.2",
+              "9.3",
+              "9.4"
+            ],
+            "details": "Gather feedback from playtesters regarding the audio experience. Make necessary adjustments based on feedback to improve sound design integration.",
+            "status": "pending",
+            "testStrategy": "Conduct playtesting sessions focused on audio feedback and make adjustments based on player input."
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "title": "Finalize Game Loop and Polish",
+        "description": "Refine the game loop and polish gameplay mechanics based on feedback.",
+        "details": "Iterate on the gameplay loop based on player feedback, focusing on pacing and tension build-up. Polish graphics and sound to enhance immersion.",
+        "testStrategy": "Conduct final playtesting sessions to gather feedback and ensure all elements work cohesively.",
+        "priority": "high",
+        "dependencies": [
+          5,
+          7,
+          9
+        ],
+        "status": "pending",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Gather and Analyze Player Feedback",
+            "description": "Collect feedback from playtesting sessions to identify specific areas of improvement in the game loop and gameplay mechanics.",
+            "dependencies": [],
+            "details": "Conduct surveys and interviews with players who participated in the playtesting. Focus on their experiences regarding pacing, tension, and overall enjoyment. Compile the feedback into a report highlighting key areas for refinement.",
+            "status": "pending",
+            "testStrategy": "Review feedback for common themes and prioritize issues based on player impact."
+          },
+          {
+            "id": 2,
+            "title": "Refine Game Loop Mechanics",
+            "description": "Iterate on the game loop based on the analyzed feedback, focusing on pacing and tension build-up.",
+            "dependencies": [
+              "10.1"
+            ],
+            "details": "Adjust the timing of events within the game loop to enhance pacing. Implement changes to how tension builds during gameplay, such as modifying enemy behavior or introducing new gameplay elements that increase suspense.",
+            "status": "pending",
+            "testStrategy": "Conduct focused playtesting sessions to evaluate the effectiveness of the new pacing and tension mechanics."
+          },
+          {
+            "id": 3,
+            "title": "Polish Graphics and Visual Effects",
+            "description": "Enhance the visual elements of the game to improve immersion and overall aesthetic appeal.",
+            "dependencies": [
+              "10.2"
+            ],
+            "details": "Review all graphical assets and make necessary adjustments to textures, lighting, and animations. Implement additional visual effects where needed, such as particle effects for anomalies or environmental changes.",
+            "status": "pending",
+            "testStrategy": "Perform visual inspections and gather player feedback on the new graphics during playtesting."
+          },
+          {
+            "id": 4,
+            "title": "Integrate and Fine-tune Sound Design",
+            "description": "Ensure that sound effects and music are effectively integrated into the gameplay to enhance the overall experience.",
+            "dependencies": [
+              "10.3"
+            ],
+            "details": "Link sound effects to specific gameplay events and adjust audio levels for balance. Test various sound cues to ensure they contribute positively to the gameplay atmosphere without being distracting.",
+            "status": "pending",
+            "testStrategy": "Conduct audio testing sessions to evaluate the impact of sound design on player immersion."
+          },
+          {
+            "id": 5,
+            "title": "Conduct Final Playtesting and Gather Feedback",
+            "description": "Perform final playtesting sessions to assess the overall cohesiveness of the game loop and polished elements.",
+            "dependencies": [
+              "10.4"
+            ],
+            "details": "Invite a diverse group of players to test the game after all refinements. Collect feedback on the gameplay experience, focusing on pacing, tension, graphics, and sound integration. Analyze the results for any last-minute adjustments.",
+            "status": "pending",
+            "testStrategy": "Use structured feedback forms and observe player interactions to identify any remaining issues."
+          }
+        ]
+      },
+      {
+        "id": 11,
+        "title": "Develop Information Collection UI/UX System",
+        "description": "Create a comprehensive information collection interface that includes multi-angle CCTV observation, zoom in/out functionality, intercom communication system, door gap observation feature, and historical experience comparison analysis.",
+        "details": "Implement a user interface that allows users to control multiple CCTV cameras for a 360-degree view of the environment. Integrate zoom in/out capabilities for detailed observation. Develop an intercom system for real-time communication. Include a feature to observe through door gaps and a comparison analysis tool for historical experiences. Utilize Unity's UI toolkit to create an intuitive layout and ensure all functionalities are seamlessly integrated. Ensure that the design is responsive and user-friendly, catering to various screen sizes and resolutions.",
+        "testStrategy": "Conduct usability testing sessions with potential users to gather feedback on the interface's intuitiveness and functionality. Verify that all features (CCTV control, zoom, intercom, door gap observation, and historical analysis) work as intended through systematic testing. Create test cases for each feature to ensure they meet the specified requirements and perform under various scenarios.",
+        "status": "pending",
+        "dependencies": [
+          3
+        ],
+        "priority": "high",
+        "subtasks": []
+      }
+    ],
+    "metadata": {
+      "created": "2025-09-03T13:42:05.325Z",
+      "updated": "2025-09-03T14:11:13.306Z",
+      "description": "Tasks for master context"
+    }
+  }
+}

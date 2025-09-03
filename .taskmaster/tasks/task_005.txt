@@ -1,0 +1,43 @@
+# Task ID: 5
+# Title: Build Anomaly Indicators
+# Status: pending
+# Dependencies: 3
+# Priority: medium
+# Description: Implement visual and audio cues for anomalies in the game.
+# Details:
+Create a system to display anomalies such as CCTV glitches and incorrect food branding. Use Unity's particle system for visual effects and trigger audio cues when anomalies occur.
+
+# Test Strategy:
+Test the anomaly indicators in various scenarios to ensure they activate correctly and enhance player tension.
+
+# Subtasks:
+## 1. Design Visual Anomaly Effects [pending]
+### Dependencies: None
+### Description: Create visual effects for different types of anomalies, such as CCTV glitches and incorrect food branding.
+### Details:
+Utilize Unity's particle system to design and implement visual effects that represent anomalies. Create prefabs for each type of anomaly effect and ensure they can be instantiated during gameplay.
+
+## 2. Implement Anomaly Detection System [pending]
+### Dependencies: 5.1
+### Description: Develop a system that detects when anomalies occur in the game.
+### Details:
+Create a script that monitors game events and triggers the anomaly effects when specific conditions are met, such as detecting a CCTV glitch or incorrect food branding. Use Unity's event system to handle these triggers.
+
+## 3. Integrate Audio Cues for Anomalies [pending]
+### Dependencies: 5.2
+### Description: Add audio cues that correspond to the detected anomalies to enhance player experience.
+### Details:
+Develop audio clips for each type of anomaly and integrate them into the anomaly detection system. Ensure that audio cues are triggered simultaneously with the visual effects.
+
+## 4. Create Anomaly Feedback Mechanism [pending]
+### Dependencies: 5.3
+### Description: Implement a feedback mechanism that informs players of the detected anomalies through both visual and audio cues.
+### Details:
+Design a user interface element that displays a message or icon when an anomaly is detected. Ensure that this feedback is clear and enhances the player's awareness of the situation.
+
+## 5. Test and Refine Anomaly Indicators [pending]
+### Dependencies: 5.4
+### Description: Conduct thorough testing of the anomaly indicators to ensure they function correctly and enhance gameplay.
+### Details:
+Create a series of test scenarios to evaluate the effectiveness of the visual and audio cues. Gather player feedback and make necessary adjustments to improve clarity and impact.
+

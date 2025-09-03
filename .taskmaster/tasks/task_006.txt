@@ -1,0 +1,43 @@
+# Task ID: 6
+# Title: Develop Player Response Mechanisms
+# Status: pending
+# Dependencies: 3
+# Priority: high
+# Description: Implement player response options for dealing with anomalies.
+# Details:
+Create mechanics for calling the police, locking the door, and recording CCTV footage. Ensure these actions have consequences on the game's endings.
+
+# Test Strategy:
+Conduct playtesting to verify that player responses affect gameplay outcomes and are intuitive.
+
+# Subtasks:
+## 1. Implement Call Police Mechanic [pending]
+### Dependencies: None
+### Description: Create the mechanic that allows players to call the police when they encounter an anomaly.
+### Details:
+Develop a user interface button for calling the police. When activated, trigger an animation or sound effect to simulate the call. Ensure that this action has a defined consequence on the game's ending, such as increasing safety or alerting the anomaly.
+
+## 2. Implement Lock Door Mechanic [pending]
+### Dependencies: 6.1
+### Description: Create the mechanic that allows players to lock the door as a response to anomalies.
+### Details:
+Develop a user interface button for locking the door. When activated, change the door state to 'locked' and provide feedback through sound or animation. Ensure this action affects the player's safety and the game's ending.
+
+## 3. Implement CCTV Recording Mechanic [pending]
+### Dependencies: 6.1
+### Description: Create the mechanic that allows players to record CCTV footage when faced with anomalies.
+### Details:
+Develop a user interface button for starting and stopping the CCTV recording. When activated, simulate recording footage and provide visual feedback. Ensure that this action has consequences, such as revealing information or affecting the game's ending.
+
+## 4. Define Consequences for Player Actions [pending]
+### Dependencies: 6.2, 6.3
+### Description: Establish the consequences of the player actions (calling police, locking door, recording CCTV) on the game's endings.
+### Details:
+Create a system that tracks player actions and their outcomes. Define how each action influences the game's narrative and endings, ensuring that players receive feedback on their choices.
+
+## 5. Integrate and Test Player Response Mechanisms [pending]
+### Dependencies: 6.4
+### Description: Integrate all player response mechanisms into the game and conduct comprehensive testing.
+### Details:
+Combine the call police, lock door, and CCTV recording mechanics into the gameplay loop. Ensure that all UI elements are functional and intuitive. Conduct playtesting sessions to gather feedback on the player experience and make necessary adjustments.
+
