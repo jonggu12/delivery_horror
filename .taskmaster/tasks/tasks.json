@@ -85,7 +85,7 @@
             "description": "Develop the basic UI elements for delivery app notifications and player choices.",
             "dependencies": [],
             "details": "Create UI panels for notifications and choices using Unity's Canvas system. Ensure that the UI updates dynamically based on the game state and player interactions.",
-            "status": "pending",
+            "status": "done",
             "testStrategy": "Perform usability testing to check the clarity and responsiveness of the UI elements."
           },
           {
