@@ -9,7 +9,7 @@
         "testStrategy": "Verify repository is accessible and correctly structured by cloning it to a local machine.",
         "priority": "medium",
         "dependencies": [],
-        "status": "pending",
+        "status": "done",
         "subtasks": [
           {
             "id": 1,
@@ -17,7 +17,7 @@
             "description": "Set up a new Git repository on GitHub or GitLab for the project.",
             "dependencies": [],
             "details": "Log into your GitHub or GitLab account and create a new repository. Ensure to initialize it with a README file.",
-            "status": "pending",
+            "status": "done",
             "testStrategy": "Verify that the repository is created and accessible online."
           },
           {
@@ -26,7 +26,7 @@
             "description": "Establish the initial directory structure for both Unity and Unreal projects within the repository.",
             "dependencies": [],
             "details": "Clone the repository locally. Create folders named 'UnityProject' and 'UnrealProject'. Inside each folder, create subfolders for 'Assets', 'Scripts', and 'Scenes'.",
-            "status": "pending",
+            "status": "done",
             "testStrategy": "Check that the directory structure matches the specified layout by listing the folders."
           },
           {
@@ -35,7 +35,7 @@
             "description": "Enhance the README file with project overview and setup instructions.",
             "dependencies": [],
             "details": "Edit the README file to include a brief description of the project, its purpose, and detailed setup instructions for both Unity and Unreal environments.",
-            "status": "pending",
+            "status": "done",
             "testStrategy": "Review the README file for clarity and completeness by having a team member read it."
           },
           {
@@ -44,7 +44,7 @@
             "description": "Commit the initial directory structure and README file to the repository.",
             "dependencies": [],
             "details": "Use Git commands to stage all changes and commit them with a message like 'Initial project structure and README added'. Push the changes to the remote repository.",
-            "status": "pending",
+            "status": "done",
             "testStrategy": "Confirm that the changes are reflected in the remote repository by checking the commit history."
           },
           {
@@ -53,7 +53,7 @@
             "description": "Ensure that the repository is accessible and correctly structured by cloning it to a local machine.",
             "dependencies": [],
             "details": "Clone the repository to a different local directory and verify that all files and folders are present as expected.",
-            "status": "pending",
+            "status": "done",
             "testStrategy": "Check that the cloned repository matches the original structure and that the README file is readable."
           }
         ]
@@ -76,7 +76,7 @@
             "description": "Create the 2D card swipe mechanic that allows players to interact with normal and abnormal scenarios.",
             "dependencies": [],
             "details": "Utilize Unity's UI system to design swipeable cards. Implement touch input detection for swipe gestures and define behaviors for normal and abnormal scenarios based on the swipe direction.",
-            "status": "pending",
+            "status": "done",
             "testStrategy": "Conduct user testing to ensure the swipe mechanic is responsive and intuitive."
           },
           {

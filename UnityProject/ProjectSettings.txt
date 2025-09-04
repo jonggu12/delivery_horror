@@ -1,0 +1,28 @@
+# Unity Project Settings for 배달호러 (Delivery Horror)
+# Project Version: 2021.3 LTS or higher
+# Template: 2D
+
+## Project Configuration
+- Platform: Mobile (iOS/Android) + PC
+- Rendering Pipeline: Universal Render Pipeline (URP)
+- Color Space: Linear
+- Graphics API: Vulkan/Metal/DirectX11
+
+## Input System
+- New Input System: Enabled
+- Touch Input: Required for card swipe mechanics
+
+## Build Settings
+- Development Build: Enabled for prototyping
+- Script Debugging: Enabled
+- Auto-connect Profiler: Enabled
+
+## Quality Settings
+- Texture Quality: Medium (for prototyping)
+- Shadow Quality: Medium
+- Anti-Aliasing: 2x Multi Sampling
+
+## Physics2D Settings
+- Gravity: (0, -9.81) - Standard gravity
+- Velocity Iterations: 8
+- Position Iterations: 3
